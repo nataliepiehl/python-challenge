@@ -68,15 +68,6 @@ number_of_months = len(unique_months)
 # Calculate average profit/loss change
 profit_loss_average = round(mean(profit_loss_change), 2)
 
-# Print results
-print("Financial Analysis")
-print("------------------------------------")
-print(f"Total Months: {number_of_months}")
-print(f"Total: ${profit_loss_net_total}")
-print(f"Average Change: ${profit_loss_average}")
-print(f"Greatest Increase in Profits: {profit_loss_max_month} (${profit_loss_max})")
-print(f"Greatest Decreases in Profits: {profit_loss_min_month} (${profit_loss_min})")
-
 # Generate results files
 with open("analysis/results.txt", "w") as file:
 
@@ -88,3 +79,9 @@ with open("analysis/results.txt", "w") as file:
     file.write(f"Average Change: ${profit_loss_average} \n")
     file.write(f"Greatest Increase in Profits: {profit_loss_max_month} (${profit_loss_max}) \n")
     file.write(f"Greatest Decreases in Profits: {profit_loss_min_month} (${profit_loss_min}) \n")
+
+# Print out results.txt
+results = open("analysis/results.txt", 'r')
+contents = results.read()
+print(contents)
+results.close()
