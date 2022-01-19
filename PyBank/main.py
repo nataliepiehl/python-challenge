@@ -4,7 +4,6 @@
 # Python Homework
 # ------------------------------------------------
 # Import modules
-from audioop import avg
 import os
 import csv
 from statistics import mean
