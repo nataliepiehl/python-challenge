@@ -1,2 +1,2 @@
 # python-challenge
-Python Homework for Data Science Bootcamp
+Python Challenge for Data Science Bootcamp
